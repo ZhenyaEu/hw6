@@ -1,0 +1,55 @@
+<body>
+<script>
+
+function getResult (firstNum, secondNum, param) {
+    switch (param) {
+        case '+': result = firstNum + secondNum;
+        break;
+        case '-': result = firstNum - secondNum;
+        break;
+        case '*': result = firstNum * secondNum;
+        break;
+        case '/': result = firstNum / secondNum;
+        break;
+        case '**': result = firstNum ** secondNum;
+        break;
+    }
+    console.log(result);
+}
+getResult (3, 2, '+');
+
+
+
+function isCharPresent(string, symbol, number) {
+      let result = false;
+      for (let i = number; i <= string.length; i++) {
+
+        if (string[i] === symbol) {
+          result = true;
+          break;
+        }
+      }
+      return result;
+    }
+
+    console.log(isCharPresent('Alex', 'A', 2));
+    
+
+
+    function charIndexOf(string, symbol, number) {
+      let result = -1;
+      for (let i = number; i <= string.length; i++) {
+
+        if (string[i] === symbol) {
+          result = i;
+          break;
+        }
+      }
+      return result;
+    }
+
+    console.log(charIndexOf('Alex', 'e', 0));
+    
+
+</script>
+</body>
